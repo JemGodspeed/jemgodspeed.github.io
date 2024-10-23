@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jem Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
 </head>
-      
-     <!---body starts here--->
-     
-     <body>
-        <div class="main">
-            <div class="navbar">
-                <img src="logo.png" class="logo">
-                <ul>
-                    <li><a href="www.jemgodspeed.ca">HOME</a></li>
-                   <li><a href="https://en.wikipedia.org/wiki/Bill_Gates">ABOUT</a></li>
-                    <li><a href="#emaill">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="info">
-                <h3>My name is <span>Jem Topaloglu.</span></h3>
-                <h2><span>W</span>eb <span>D</span>eveloper</h2>
-                <h3>Driven by creativity and technical precision<br>we will get it done.</h3><br>
-                <a href="https://www.instagram.com/GemGodspeed" class="social-button">Follow Me</a>
-            </div>
-    
-    
-                <div class="form-container" id="emaill">
-                    <h2>Contact Me</h2>
-                
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required><br>
-            
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Your Email" required><br>
-            
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" placeholder="Write your message" required></textarea><br>
-            
-                        <button class="form-button" type="submit">Send</button>
-                    </form>
+<body class="backgroundd">
+    <div class="main">
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="images/Typing.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="navbar">
+            <img src="images/logo.png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="https://www.jemgodspeed.ca">HOME</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Bill_Gates">ABOUT</a></li>
+                <li><a href="#emaill">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h3>My name is <span>Jem Topaloglu.</span></h3>
+            <h2><span>W</span>eb <span>D</span>eveloper</h2>
+            <h3>Driven by creativity and technical precision<br>we will get it done.</h3><br>
+            <a href="https://www.instagram.com/GemGodspeed" class="social-button">Follow Me</a>
+        </div>
+
+        <div id="slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/mypic.jpg" alt="Picture of me">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/icons.jpg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer, trained in: HTML, CSS, JavaScript</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                        <div class="text">The programming language Python</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/arrow.png" alt="Replace with a picture of your choosing"> 
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                    </div>
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
             </div>
         </div>
-    </body>
 
-    <footer>
-        <a href="https://www.linkedin.com/in/cem-topaloglu/">
-        <img src="linkedin.png" class="linkedin" href="https://www.linkedin.com/in/cem-topaloglu/">
-        </a>
-        <p>all rights reserved. 2024.</p>
+        <!-- Contact Form -->
+        <div class="form-container" id="emaill">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br>
 
-    </footer>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br>
 
- 
-    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message" required></textarea><br>
+
+                <button class="form-button" type="submit">Send</button>
+            </form>
+            <div class="linkedin-container">
+                <a href="https://www.linkedin.com/in/cem-topaloglu/">
+                     <img src="linkedin.png" class="linkedin" alt="LinkedIn Profile">
+                 </a>
+                 <p >All rights reserved. 2024.</p>
+             </div>
+    </div>
+
+    <script src="JS/main.js"></script>
+</body>
 </html>
